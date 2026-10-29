@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Konversi Waktu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <h1>⏱️ Konversi Waktu</h1>
+  <p class="sub">Ubah satuan waktu atau zona waktu dengan mudah</p>
+
+  <div class="tabs">
+    <button id="t1" class="on">Satuan Waktu</button>
+    <button id="t2">Zona Waktu</button>
+  </div>
+
+  <!-- SATUAN WAKTU -->
+  <div class="card" id="p1">
+    <label for="nilai">Nilai</label>
+    <input id="nilai" type="number" value="1" inputmode="decimal">
+    <div class="dua">
+      <div><label for="dari">Dari</label><select id="dari"></select></div>
+      <div><label for="ke">Ke</label><select id="ke"></select></div>
+    </div>
+    <button class="tukar" id="tukar1">⇅ Tukar</button>
+    <div class="hasil"><small id="h1k"></small><b id="h1"></b></div>
+    <p class="cat">1 bulan dihitung 30 hari dan 1 tahun 365 hari.</p>
+  </div>
+
+  <!-- ZONA WAKTU -->
+  <div class="card hidden" id="p2">
+    <label for="jam">Jam</label>
+    <input id="jam" type="time" value="08:00">
+    <div class="dua">
+      <div><label for="zd">Dari zona</label><select id="zd"></select></div>
+      <div><label for="zk">Ke zona</label><select id="zk"></select></div>
+    </div>
+    <button class="tukar" id="tukar2">⇅ Tukar</button>
+    <div class="hasil"><small id="h2k"></small><b id="h2"></b></div>
+    <p class="cat">Zona memakai selisih tetap dari UTC (tanpa jam musim panas).</p>
+  </div>
+
+  <!-- ANGGOTA KELOMPOK -->
+  <div class="card kelompok">
+    <h2>👥 Anggota Kelompok</h2>
+    <p class="cat">Kelompok 1 · Kelas 10 PPLG 1</p>
+    <ul>
+      <li><span class="no">1</span><span class="nama">Aden Hamdan Raditya </span><span class="peran">1</span></li>
+      <li><span class="no">2</span><span class="nama">Aditya Ramadhan </span><span class="peran">2</span></li>
+      <li><span class="no">3</span><span class="nama">Zweta Zana Sasmira </span><span class="peran">40</spanS></li>
+      <li><span class="no">4</span><span class="nama">Alvira Florita Zahra </span><span class="peran">6</span></li>
+      <li><span class="no">5</span><span class="nama">Chang Nara Chimey Sanladys </span><span class="peran">12</span></li>
+    </ul>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
